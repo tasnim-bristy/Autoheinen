@@ -18,11 +18,14 @@
 
     <!-- style css -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- responsive-css -->
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <!-- header area start -->
-    <div class="header-area">
-      <div class="header-sticky">
+    <div class="header-sticky">
+      <div class="header-area">
         <div class="container">
           <div class="row">
             <div class="row-left">
@@ -33,19 +36,174 @@
             <div class="row-right">
               <div class="header-menu">
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Service</a></li>
-                  <li><a href="#">Pages</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Products</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li>
+                    <a href="#"
+                      >Startseite</i
+                    ></a>
+                  </li>
+                  <!-- <li><a href="#aboutArea">About ▼</a></li>
+                  <li><a href="#serviceArea">Service ▼</a></li>
+                  <li><a href="#workProcess">Pages ▼</a></li>
+                  <li><a href="#blogArea">Blog ▼</a></li> -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"
+                      >Produkte <i class="fa-solid fa-angle-down"></i
+                    ></a>
+
+                    <ul class="dropdown-menu grid">
+                      <li>
+                        <a
+                          href="product-details.html?id=planet"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img
+                              src="./assests/products/lenkung_oview.jpg"
+                              alt=""
+                            />
+                            <div class="info">
+                              <h4>Planetenträger 1090</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="product-details.html?id=bracket"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img
+                              src="./assests/products/motor_oview.jpg"
+                              alt=""
+                            />
+                            <div class="info">
+                              <h4>Bracket MT 75</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="product-details.html?id=benzine"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img
+                              src="./assests/products/getriebe_oview.jpg"
+                              alt=""
+                            />
+                            <div class="info">
+                              <h4>Benzinpumpengehäuse (Cover Fuel Pump)</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="product-details.html?id=schalt"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img
+                              src="./assests/products/kupplung_oview.jpg"
+                              alt=""
+                            />
+                            <div class="info">
+                              <h4>Schaltgabeln AV6R B6</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="product-details.html?id=faser"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img
+                              src="./assests/products/faserkanal.png"
+                              alt=""
+                            />
+                            <div class="info">
+                              <h4>Faserkanal</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="product-details.html?id=schaltwab"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img
+                              src="./assests/products/schaltwalzen1.png"
+                              alt=""
+                            />
+                            <div class="info">
+                              <h4>Schaltwalzen</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="product-details.html?id=kupplu"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img src="./assests/products/kupplu1.png" alt="" />
+                            <div class="info">
+                              <h4>Kupplungsnehmergehäuse</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="product-details.html?id=lenkge"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img
+                              src="./assests/products/lenkgehäuse1.png"
+                              alt=""
+                            />
+                            <div class="info">
+                              <h4>Lenkgehäuse</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="product-details.html?id=nocke"
+                          class="product-link"
+                        >
+                          <div class="product">
+                            <img
+                              src="./assests/products/nockenwellenlager1.png"
+                              alt=""
+                            />
+                            <div class="info">
+                              <h4>Nockenwellenlager</h4>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- <li><a href="#footerArea">Contact ▼</a></li> -->
                 </ul>
                 <div class="header-search-icon">
                   <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
                 <div class="header-button">
-                  <a href="#">Get A Quote</a>
+                  <a href="#">Angebot anfordern</a>
                 </div>
               </div>
             </div>
@@ -60,20 +218,27 @@
       <div class="container">
         <div class="hero-area-row">
           <div class="hero-content">
-            <h4>Welcome to Autoheinen</h4>
-            <h1>Top It Solution Agency <br />In The World</h1>
+            <h4>Willkommen bei Autoheinen</h4>
+            <h1>
+              Autoheinen <br />
+              Competence In Aluminium
+            </h1>
             <p>
-              And In Order To Make A Business, Brand Advertising And Marketing
-              Plays An <br />
-              Important Role. Similarly, In Making Cultivation Business
+              Unsere erfahrenen Mitarbeitenden begleiten Kunden von der
+              Grundkonzeption <br />
+              eines Produktes, dem Prototyping, über die Versuchs- und
+              Validierungsphase <br />
+              bis zur produktiven Serienumsetzung mit hoher <br />
+              Problemlösungskompetenz und effizientem <br />
+              Projektmanagement.
             </p>
           </div>
           <div class="hero-button">
             <div class="hero-btn1">
-              <a href="#">How It Works</a>
+              <a href="#">So funktioniert es</a>
             </div>
             <div class="hero-btn2">
-              <a href="#">IT Services</a>
+              <a href="#">Dienstleistungen</a>
             </div>
           </div>
         </div>
@@ -82,12 +247,12 @@
     <!-- hero area end -->
 
     <!-- start feature area -->
-    <div class="feature-area">
+    <!-- <div class="feature-area">
       <div class="container">
         <div class="feature-row">
-          <div class="flip flip-box1">
+          <div class="flip flip-box">
             <img src="./assests/feature-icon-1.png" alt="feature" />
-            <h5>Managed IT Services</h5>
+            <h5>Lehrlingsausbildung</h5>
             <p>
               Proin Pulvinar Eu Sem Endro thes <br />
               Vehicula. Integer Urna Libero and,<br />
@@ -95,7 +260,7 @@
             </p>
             <a href="#">Read More<i class="fa-solid fa-angles-right"></i></a>
           </div>
-          <div class="flip flip-box2">
+          <div class="flip flip-box">
             <img src="./assests/feature-icon-2.png" alt="" />
             <h5>Cloud Services</h5>
             <p>
@@ -105,7 +270,7 @@
             </p>
             <a href="#">Read More<i class="fa-solid fa-angles-right"></i></a>
           </div>
-          <div class="flip flip-box3">
+          <div class="flip flip-box">
             <img src="./assests/feature-icon-3.png" alt="" />
             <h5>Machine Learning</h5>
             <p>
@@ -115,7 +280,7 @@
             </p>
             <a href="#">Read More<i class="fa-solid fa-angles-right"></i></a>
           </div>
-          <div class="flip flip-box4">
+          <div class="flip flip-box">
             <img src="./assests/feature-icon-4.png" alt="" />
             <h5>Data Security</h5>
             <p>
@@ -127,15 +292,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- end feature area -->
 
     <!-- start about area -->
-    <div class="about-area">
+    <!-- <div class="about-area" id="aboutArea">
       <div class="container">
         <div class="about-row">
           <div class="about-thumb">
-            <img src="./assests/about-thumb.png" alt="About" />
+            <img src="./assests/about-thumb.jpg" alt="About" />
           </div>
           <div class="about-right">
             <div class="section-title">
@@ -185,10 +350,10 @@
               </div>
               <div class="about-author">
                 <div class="about-author-thumb">
-                  <img src="./assests/about-author.jpg" alt="" />
+                  <img src="./assests/about-author.png" alt="" />
                 </div>
                 <div class="about-author-content">
-                  <h4>Kevin Martin</h4>
+                  <h4>Dr. Theodor Scherer</h4>
                   <p>CEO & Founder</p>
                 </div>
               </div>
@@ -199,11 +364,11 @@
           <img src="./assests/about-shape.jpg" alt="About Shape" />
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- end about area  -->
 
     <!-- service area start -->
-     <div class="service-area">
+    <!-- <div class="service-area" id="serviceArea">
         <div class="container">
             <div class="service-row">
                 <div class="service-title">
@@ -274,7 +439,712 @@
                 </div>
             </div>
         </div>
-     </div>
-     <!-- service area end -->
+     </div> -->
+    <!-- service area end -->
+
+    <!-- work process start -->
+    <!-- <div class="work-process-area" id="workProcess">
+        <div class="container">
+          <div class="working-process-row">
+            <div class="work-process-title">
+              <h4>Work Process</h4>
+              <h2>Working Process For <span>Technology</span></h2>
+            </div>
+            <div class="process-box">
+              <div class="single-process">
+                <div class="process-box-thumb">
+                  <img src="./assests/process-icon-1.png" alt="">
+                </div>
+                <div class="process-shape">
+                  <img src="./assests/process-shape2.png" alt="">
+                </div>
+                <div class="process-number">
+                  <span>1</span>
+                </div>
+                <div class="process-content">
+                  <h4>Select A Project</h4>
+                  <p>We have the technology and IT <br> expertise to develop.</p>
+                </div>
+              </div>
+              <div class="single-process">
+                <div class="process-box-thumb">
+                  <img src="./assests/process-icon-2.png" alt="">
+                </div>
+                <div class="process-shape">
+                  <img src="./assests/process-shape.png" alt="">
+                </div>
+                <div class="process-number">
+                  <span>2</span>
+                </div>
+                <div class="process-content">
+                  <h4>Project Analysis</h4>
+                  <p>We have the technology and IT <br> expertise to develop.</p>
+                </div>
+              </div>
+              <div class="single-process">
+                <div class="process-box-thumb">
+                  <img src="./assests/process-icon-3.png" alt="">
+                </div>
+                <div class="process-shape">
+                  <img src="./assests/process-shape2.png" alt="">
+                </div>
+                <div class="process-number">
+                  <span>3</span>
+                </div>
+                <div class="process-content">
+                  <h4>Start Process</h4>
+                  <p>We have the technology and IT <br> expertise to develop.</p>
+                </div>
+              </div>
+              <div class="single-process">
+                <div class="process-box-thumb">
+                  <img src="./assests/process-icon-4.png" alt="">
+                </div>
+                <div class="process-number">
+                  <span>4</span>
+                </div>
+                <div class="process-content">
+                  <h4>Deliver Result</h4>
+                  <p>We have the technology and IT <br> expertise to develop.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- work process start -->
+
+    <!-- faqs area start -->
+    <!-- <div class="faqs-area">
+        <div class="container">
+          <div class="faqs-row">
+            <div class="single-contact-box">
+              <div class="contact-content">
+                <h4>Get Free Estimate</h4>
+              </div>
+              <div class="single-content">
+                <form action="#">
+                  <div class="input-box">
+                    <div class="single-input-box">
+                      <input type="text" name="name" placeholder="Name" id="">
+                    </div>
+                    <div class="single-input-box">
+                      <input type="text" name="phone" placeholder="Phone" id="">
+                    </div>
+                    <div class="single-input-box">
+                      <input type="text" name="Email" placeholder="Email" id="">
+                    </div>
+                    <div class="single-input-box">
+                      <textarea name="Message" placeholder="Write Message" id=""></textarea>
+                    </div>
+                    <div class="single-input-box">
+                      <button type="submit">Free Consultancy</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="faqs-title">
+              <h4>Work Process</h4>
+              <h2>Frequently Asked Any Kind of Questions</h2>
+              <div class="faqs-container">
+                <div class="faq-singular">
+                  <div class="faq-question">
+                    <img src="./assests/question.png" alt="">
+                    <h3>#1 What is Technology service?</h3>
+                    <div class="faqs-icon">
+                      <i class="fa-solid fa-plus"></i>
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                  </div>
+                  <div class="faq-answer">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, deleniti?
+                    </h3>
+                  </div>
+                </div>
+                <div class="faq-singular">
+                  <div class="faq-question">
+                    <img src="./assests/question.png" alt="">
+                    <h3>#2 How To Buy A Product?</h3>
+                    <div class="faqs-icon">
+                      <i class="fa-solid fa-plus"></i>
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                  </div>
+                  <div class="faq-answer">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, deleniti?
+                    </h3>
+                  </div>
+                </div>
+                <div class="faq-singular">
+                  <div class="faq-question">
+                    <img src="./assests/question.png" alt="">
+                    <h3>#3 How Work The Support Policy?</h3>
+                    <div class="faqs-icon">
+                      <i class="fa-solid fa-plus"></i>
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                  </div>
+                  <div class="faq-answer">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, deleniti?
+                    </h3>
+                  </div>
+                </div>
+                <div class="faq-singular">
+                  <div class="faq-question">
+                    <img src="./assests/question.png" alt="">
+                    <h3>#4 How Can Send A Refund Request?</h3>
+                    <div class="faqs-icon">
+                      <i class="fa-solid fa-plus"></i>
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                  </div>
+                  <div class="faq-answer">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, deleniti?
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div> -->
+    <!-- faqs area start -->
+
+    <!-- portfolio area start -->
+    <!-- <div class="portfolio-area">
+          <div class="container">
+            <div class="portfolio-area-title">
+              <h4>Portfolio</h4>
+              <h2>Our Completed <span>Projects</span></h2>
+            </div>
+             </div>
+            <div class="portfolio-list1">
+             <div class="single-portfolio-box">
+               <div class="portfolio-thumb">
+                <img src="./assests/portfolio-1.jpg" alt="portfolio">
+                <div class="portfolio-content">
+                <div class="portfolio-button">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="portfolio-title">
+                  <a href="#">Digital Marketing Agency</a>
+                  <p>Marketing</p>
+                </div>
+               </div>
+               </div>
+             </div>
+             <div class="single-portfolio-box">
+               <div class="portfolio-thumb">
+                <img src="./assests/portfolio-2.jpg" alt="portfolio">
+                <div class="portfolio-content">
+                <div class="portfolio-button">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="portfolio-title">
+                  <a href="#">Digital Marketing Agency</a>
+                  <p>Marketing</p>
+                </div>
+               </div>
+               </div>
+             </div>
+             <div class="single-portfolio-box">
+               <div class="portfolio-thumb">
+                <img src="./assests/portfolio-3.jpg" alt="portfolio">
+                <div class="portfolio-content">
+                <div class="portfolio-button">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="portfolio-title">
+                  <a href="#">Digital Marketing Agency</a>
+                  <p>Marketing</p>
+                </div>
+               </div>
+               </div>
+             </div>
+            </div>
+        </div> -->
+    <!-- portfolio area end -->
+
+    <!-- team area start -->
+    <div class="team-area">
+      <div class="container">
+        <div class="team-area-row">
+          <div class="team-area-title">
+            <h2>Geschichte</h2>
+          </div>
+          <div class="team-area-content">
+            <div class="single-team-box">
+              <div class="team-thumb">
+                <img src="./assests/Picture1.png" alt="" />
+              </div>
+              <div class="team-bio">
+                <h4>2010 > Management und Wachstum</h4>
+                <p>
+                  2009 Erwerb der Firma Auto Heinen GmbH in die
+                  Unternehmensgruppe Scherer.
+                </p>
+              </div>
+            </div>
+            <div class="single-team-box">
+              <div class="team-thumb">
+                <img src="./assests/Picture2.png" alt="" />
+                <img src="./assests/Picture5.png" alt="" />
+              </div>
+              <div class="team-bio">
+                <h4>2002 - 2009 Qualität und Internationalisierung</h4>
+                <p>
+                  2001 Umfirmierung in AUTO HEINEN Automobiltechnik GmbH <br />
+                  2005 Übernahme der Geschäftsanteile durch das Management
+                </p>
+              </div>
+            </div>
+            <div class="single-team-box">
+              <div class="team-thumb">
+                <img src="./assests/Picture6.png" alt="" />
+                <img src="./assests/Picture3.png" alt="" />
+              </div>
+              <div class="team-bio">
+                <h4>1948 - 2001 Neubeginn und Zertifizierung</h4>
+                <p>
+                  1948 Neubeginn nach Zerstörung des Werkes im 2. Weltkrieg.
+                  1969 Erweiterung der Produktpalette nach Gründung der D&S
+                  Druck- und Spritzguss GmbH für Druckgussteile. 1996 Fusion der
+                  Firmen AUTO HEINEN und D&S zu AUTO HEINEN Automobiltechnik
+                  GmbH & Co.
+                </p>
+              </div>
+            </div>
+            <div class="single-team-box">
+              <div class="team-thumb">
+                <img src="./assests/Picture4.png" alt="" />
+                <img src="./assests/Picture7.png" alt="" />
+              </div>
+              <div class="team-bio">
+                <h4>1933 - 1947 Gründung und Aufbau </h4>
+                <p>
+                 1933 Gründung Zylinderschleiferei durch Ing. Heinrich Heinen, später AUTO HEINEN genannt.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="single-team-box">
+                  <div class="team-thumb">
+                    <img src="./assests/team1.jpg" alt="team">
+                  </div>
+                  <div class="team-content">
+                    <div class="team-bio">
+                      <h4>Arianna Bibi</h4>
+                      <p>Web Developer</p>
+                    </div>
+                    <div class="team-social-icon">
+                      <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-team-box">
+                  <div class="team-thumb">
+                    <img src="./assests/team2.jpg" alt="team">
+                  </div>
+                  <div class="team-content">
+                    <div class="team-bio">
+                      <h4>Nazmul Hossen</h4>
+                      <p>UI/UX Designar</p>
+                    </div>
+                    <div class="team-social-icon">
+                      <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-team-box">
+                  <div class="team-thumb">
+                    <img src="./assests/team3.jpg" alt="team">
+                  </div>
+                  <div class="team-content">
+                    <div class="team-bio">
+                      <h4>Roman Soltana</h4>
+                      <p>Manager</p>
+                    </div>
+                    <div class="team-social-icon">
+                      <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-team-box">
+                  <div class="team-thumb">
+                    <img src="./assests/team4.jpg" alt="team">
+                  </div>
+                  <div class="team-content">
+                    <div class="team-bio">
+                      <h4>Nazmul Hossen</h4>
+                      <p>UI/UX Developer</p>
+                    </div>
+                    <div class="team-social-icon">
+                      <ul>
+                        <li><a href="#"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- team area end -->
+
+    <!-- testimonial area start -->
+    <!-- <div class="testimonial-area">
+            <div class="container">
+              <div class="testimonial-content-area">
+                <div class="testimonial-title">
+                  <h4>Testimonial</h4>
+                  <h2>Customer’s Awesome Feedback <br> About Our Services</h2>
+              </div>
+              <div class="testimonial-box">
+                <div class="testi-thumb">
+                  <img src="./assests/testi-1.png" alt="Testimonial">
+                  <img src="./assests/testi-2.png" alt="Testimonial">
+                  <img src="./assests/testi-3.png" alt="Testimonial">
+                  <img src="./assests/testi-4.png" alt="Testimonial">
+                </div>
+                <div class="single-testimonial-box">
+                  <div class="testi-desc">
+                    <p>Completely extend leveraged customer service rather than performance based imperatives. <br> magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches <br> technology. Enthusiastically e-enable global e-markets for cooperative e-business. <br> Authoritatively deliver highly efficient expertise</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="dash">
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                  <div class="testimonial-bio">
+                    <h2>Venkatesh Iyer</h2>
+                    <p>UI Designer</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div> -->
+    <!-- testimonial area end -->
+
+    <!-- blog area start -->
+    <!-- <div class="blog-area" id="blogArea">
+            <div class="container">
+              <div class="blog-content-area">
+                <div class="blog-title">
+                  <h4>Our blog Update</h4>
+                  <h2>Featured News And <span>Insights</span></h2>
+                </div>
+                <div class="single-blog-card">
+                  <div class="single-blog-box">
+                  <div class="blog-card">
+                    <div class="blog-thumb">
+                      <img src="./assests/blog1.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-meta">
+                        <div class="blog-calender">
+                          <i class="fa-solid fa-calendar-check"></i>
+                          <p>November 30 2025</p>
+                        </div>
+                        <div class="blog-desc">
+                          <a href="#">Most Popular Chrome Extensionfor <br> Business Promot</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="blog-bottom">
+                    <div class="blog-author">
+                      <i class="fa-solid fa-user"></i>
+                      <h5>By Admin</h5>
+                    </div>
+                    <div class="blog-button">
+                      <a href="#">Read More</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+                  <div class="single-blog-box">
+                  <div class="blog-card">
+                    <div class="blog-thumb">
+                      <img src="./assests/blog2.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-meta">
+                        <div class="blog-calender">
+                          <i class="fa-solid fa-calendar-check"></i>
+                          <p>November 30 2025</p>
+                        </div>
+                        <div class="blog-desc">
+                          <a href="#">Marketing Your Area Business <br> Downturn Now A</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="blog-bottom">
+                    <div class="blog-author">
+                      <i class="fa-solid fa-user"></i>
+                      <h5>By Admin</h5>
+                    </div>
+                    <div class="blog-button">
+                      <a href="#">Read More</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+                  <div class="single-blog-box">
+                  <div class="blog-card">
+                    <div class="blog-thumb">
+                      <img src="./assests/blog-3.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-meta">
+                        <div class="blog-calender">
+                          <i class="fa-solid fa-calendar-check"></i>
+                          <p>November 30 2025</p>
+                        </div>
+                        <div class="blog-desc">
+                          <a href="#">Better Context Menus With Safe <br> Triangles</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="blog-bottom">
+                    <div class="blog-author">
+                      <i class="fa-solid fa-user"></i>
+                      <h5>By Admin</h5>
+                    </div>
+                    <div class="blog-button">
+                      <a href="#">Read More</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+           </div> -->
+    <!-- blog area end -->
+
+    <!-- reference  area start-->
+    <div class="reference-area">
+      <div class="container">
+        <!-- <h2>Referenzen</h2> -->
+      </div>
+      <div class="reference">
+        <div class="reference-content">
+          <div class="reference-img">
+            <img src="./assests/reference/reference-1.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-2.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-3.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-4.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-5.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-6.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-7.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-8.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-9.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-10.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-11.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-12.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-13.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-14.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-1.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-2.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-3.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-4.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-5.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-6.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-7.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-8.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-9.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-10.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-11.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-12.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-13.png" alt="" />
+          </div>
+          <div class="reference-img">
+            <img src="./assests/reference/reference-14.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- reference  area start-->
+
+    <!-- footer area start -->
+    <div class="footer-area" id="footerArea">
+      <div class="container">
+        <div class="footer-content-area">
+          <div class="footer-section1">
+            <div class="footer-logo">
+              <img src="./assests/logo.gif" alt="Footer Logo" />
+            </div>
+            <div class="footer-widget-desc">
+              <h6>Auto Heinen GmbH</h6>
+              <p>Heinenstraße 9-15</p>
+              <p>53902 Bad Münstereifel</p>
+              <p>GERMANY</p>
+              <div class="contact-num">
+                <p><i class="fa-solid fa-phone"></i> +49 22531843930</p>
+                <p><i class="fa-solid fa-envelope"></i> info@schertech.com</p>
+              </div>
+            </div>
+            <div class="button-dis">
+              <a href="#"
+                >Mehr entdecken <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section2">
+            <div class="footer-widget-title">
+              <h4>Unternehmen</h4>
+            </div>
+            <div class="footer-widget-menu">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-regular fa-circle-right"></i>Über</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-regular fa-circle-right"></i>Unser Team</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-regular fa-circle-right"></i>Preisplan</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-regular fa-circle-right"></i>Neuester Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-regular fa-circle-right"></i>Karriere</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-section-3">
+            <div class="footer-widget-title">
+              <h4>Newsletter</h4>
+            </div>
+            <div class="footer-widget-desc">
+              <p>Abonnieren Sie unseren aktuellen Newsletter</p>
+            </div>
+            <form action="#">
+              <div class="footer-newsletter-box">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Your Email"
+                  id=""
+                />
+                <button type="submit">Abonnieren</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom-area">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 Autoheinen</p>
+          </div>
+          <div class="footer-bottom-social-icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script js -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
