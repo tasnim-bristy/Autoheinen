@@ -404,58 +404,70 @@
               <i class="fa-solid fa-chevron-right"></i>
             </button>
           </div>
-          <!-- <div class="home-btn">
-            <a href="index.html">Zurück zur Startseite</a>
-          </div> -->
         </div>
       </div>
     </div>
 
     <!-- JS: show product based on URL -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const allProducts = Array.from(
-          document.querySelectorAll(".product-details .product-dis")
-        );
-        allProducts.forEach((p) => (p.style.display = "none"));
+   <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const products = [...document.querySelectorAll(".product-dis")];
+  const wrapper = document.querySelector(".products");
 
-        const params = new URLSearchParams(window.location.search);
-        let productId = params.get("id");
+  products.forEach(p => p.style.display = "none");
 
-        function showProductById(id) {
-          allProducts.forEach((p) => (p.style.display = "none"));
-          const prod = document.getElementById(id + "Id");
-          if (prod) prod.style.display = "block";
-        }
+  let current = 0;
 
-        // show initial product
-        if (productId) showProductById(productId);
+  function forceRepaint() {
+    document.body.style.display = "none";
+    document.body.offsetHeight; // force reflow
+    document.body.style.display = "";
+  }
 
-        // product nav buttons
-        const prevBtn = document.getElementById("prevProduct");
-        const nextBtn = document.getElementById("nextProduct");
+  function show(index) {
+    // freeze scroll
+    const scrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = "100%";
 
-        function getCurrentIndex() {
-          return allProducts.findIndex((p) => p.style.display === "block");
-        }
+    // lock container height
+    wrapper.style.height = wrapper.offsetHeight + "px";
 
-        prevBtn.addEventListener("click", () => {
-          let idx = getCurrentIndex();
-          idx = (idx - 1 + allProducts.length) % allProducts.length; // wrap around
-          const id = allProducts[idx].id.replace("Id", "");
-          productId = id;
-          showProductById(id);
-        });
+    products.forEach(p => (p.style.display = "none"));
+    products[index].style.display = "block";
 
-        nextBtn.addEventListener("click", () => {
-          let idx = getCurrentIndex();
-          idx = (idx + 1) % allProducts.length; // wrap around
-          const id = allProducts[idx].id.replace("Id", "");
-          productId = id;
-          showProductById(id);
-        });
-      });
-    </script>
+    forceRepaint();
+
+    requestAnimationFrame(() => {
+      // unlock
+      wrapper.style.height = "";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      window.scrollTo(0, scrollY);
+    });
+
+    current = index;
+  }
+
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+  if (id) {
+    const i = products.findIndex(p => p.id === id + "Id");
+    if (i !== -1) show(i);
+  }
+
+  document.getElementById("prevProduct").onclick = () => {
+    show((current - 1 + products.length) % products.length);
+  };
+
+  document.getElementById("nextProduct").onclick = () => {
+    show((current + 1) % products.length);
+  };
+});
+</script>
+
+
 
     <script src="./js/script.js"></script>
   </body>
