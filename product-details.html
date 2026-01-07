@@ -49,7 +49,7 @@
                           href="product-details.html?id=planet"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img
                               src="./assests/products/lenkung_oview.jpg"
                               alt=""
@@ -66,7 +66,7 @@
                           href="product-details.html?id=bracket"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img
                               src="./assests/products/motor_oview.jpg"
                               alt=""
@@ -83,7 +83,7 @@
                           href="product-details.html?id=benzine"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img
                               src="./assests/products/getriebe_oview.jpg"
                               alt=""
@@ -99,7 +99,7 @@
                           href="product-details.html?id=schalt"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img
                               src="./assests/products/kupplung_oview.jpg"
                               alt=""
@@ -115,7 +115,7 @@
                           href="product-details.html?id=faser"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img
                               src="./assests/products/faserkanal.png"
                               alt=""
@@ -131,7 +131,7 @@
                           href="product-details.html?id=schaltwab"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img
                               src="./assests/products/schaltwalzen1.png"
                               alt=""
@@ -147,7 +147,7 @@
                           href="product-details.html?id=kupplu"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img src="./assests/products/kupplu1.png" alt="" />
                             <div class="info">
                               <h4>Kupplungsnehmergehäuse</h4>
@@ -160,7 +160,7 @@
                           href="product-details.html?id=lenkge"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img
                               src="./assests/products/lenkgehäuse1.png"
                               alt=""
@@ -176,7 +176,7 @@
                           href="product-details.html?id=nocke"
                           class="product-link"
                         >
-                          <div class="product-img">
+                          <div class="product">
                             <img
                               src="./assests/products/nockenwellenlager1.png"
                               alt=""
@@ -206,7 +206,7 @@
       <div class="container">
         <div class="products">
           <!-- Product 1 -->
-          <div class="product1 product" id="planetId">
+          <div class="product1 product-dis" id="planetId">
             <div class="product-thumb">
               <img src="./assests/products/lenkung1.jpg" alt="" />
             </div>
@@ -228,7 +228,7 @@
           </div>
 
           <!-- Product 2 -->
-          <div class="product2 product" id="bracketId">
+          <div class="product2 product-dis" id="bracketId">
             <div class="product-thumb">
               <img src="./assests/products/motor1.jpg" alt="" />
             </div>
@@ -250,7 +250,7 @@
           </div>
 
           <!-- Product 3 -->
-          <div class="product3 product" id="benzineId">
+          <div class="product3 product-dis" id="benzineId">
             <div class="product-thumb">
               <img src="./assests/products/getriebe1.jpg" alt="" />
             </div>
@@ -273,7 +273,7 @@
           </div>
 
           <!-- Product 4 -->
-          <div class="product4 product" id="schaltId">
+          <div class="product4 product-dis" id="schaltId">
             <div class="product-thumb">
               <img src="./assests/products/kupplung1.png" alt="" />
             </div>
@@ -292,7 +292,7 @@
           </div>
 
           <!-- Product 5 -->
-          <div class="product5 product" id="faserId">
+          <div class="product5 product-dis" id="faserId">
             <div class="product-thumb">
               <img src="./assests/products/faserkanal.png" alt="" />
             </div>
@@ -313,7 +313,7 @@
           </div>
 
           <!-- product 6 -->
-          <div class="product5 product" id="schaltwabId">
+          <div class="product5 product-dis" id="schaltwabId">
             <div class="product-thumb">
               <img src="./assests/products/schaltwalzen.png" alt="" />
             </div>
@@ -337,7 +337,7 @@
             </div>
           </div>
           <!-- product 7 -->
-          <div class="product5 product" id="kuppluId">
+          <div class="product5 product-dis" id="kuppluId">
             <div class="product-thumb">
               <img src="./assests/products/kupplu.png" alt="" />
             </div>
@@ -357,7 +357,7 @@
             </div>
           </div>
           <!-- product 8 -->
-          <div class="product5 product" id="lenkgeId">
+          <div class="product5 product-dis" id="lenkgeId">
             <div class="product-thumb">
               <img src="./assests/products/lenkgehause.png" alt="" />
             </div>
@@ -378,7 +378,7 @@
             </div>
           </div>
           <!-- product 9 -->
-          <div class="product5 product" id="nockeId">
+          <div class="product5 product-dis" id="nockeId">
             <div class="product-thumb">
               <img src="./assests/products/nockenwellenlag.png" alt="" />
             </div>
@@ -415,7 +415,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const allProducts = Array.from(
-          document.querySelectorAll(".product-details .product")
+          document.querySelectorAll(".product-details .product-dis")
         );
         allProducts.forEach((p) => (p.style.display = "none"));
 
