@@ -199,7 +199,7 @@ body{
   display: none !important;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -240px;
   background: #fff;
   width: 420px;
   padding: 10px;
